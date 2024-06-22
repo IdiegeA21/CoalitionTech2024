@@ -1,6 +1,6 @@
 # Coalition Technologies 2024 Frontend Development Challenge
 
-Coalition Technologies 2024 Frontend Development challenge hosted by TestRecruits. This project is built using using HTML, CSS, and JavaScript.
+Coalition Technologies 2024 Frontend Development challenge hosted by TestRecruits Solution.
 
 ## How to Run the Project
 
