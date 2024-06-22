@@ -117,4 +117,4 @@ if (storedCredentialsJSON) {
 Feel free to explore the project and provide any feedback or suggestions for improvement.
 ---
 
-You can customize this template further by adding any additional instructions, acknowledgments, or details about the project as needed. 
+Code fast and smarter. 
