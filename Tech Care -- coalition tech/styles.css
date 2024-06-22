@@ -1,0 +1,634 @@
+/* <!-- google fontt style  --> */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .5s all ease-in-out;
+}
+
+body {
+    padding: 17px;
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #dddddd;
+    color: #072635;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img:not(.icon) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: block;
+    width: 100%;
+}
+
+.navbar {
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 32px;
+    height: 80px;
+}
+
+.brand {
+    height: 48px;
+    width: 210.58px;
+}
+
+.menu {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu>ul {
+    display: flex;
+}
+
+.menu-icon {
+    display: none;
+}
+
+li.nav-item {
+    border-radius: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: all 0.5s;
+}
+
+li.nav-item:hover {
+    background-color: #21ebebc4;
+}
+
+li.active {
+    background-color: #21ebeb;
+}
+
+.nav-link {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #072635;
+    display: flex;
+    padding: 12px 18px;
+}
+
+img.icon {
+    width: 24px;
+    height: 17px;
+    margin-right: 6px;
+}
+
+.nav-link>p {
+    transform: translateX(-1.897px);
+}
+
+.menu>.doctor-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.doctor-info {
+    display: flex;
+}
+
+.doctor-info>img {
+    width: 44px;
+    height: 44px;
+    margin-right: 2px;
+}
+
+.doctor-info>div {
+    margin-left: 5px;
+    margin-right: 20px;
+    text-align: left;
+    transform: translateY(2px);
+}
+
+.doc-name {
+    font-weight: bold;
+}
+
+.set-more {
+    display: flex;
+    padding-left: 10px;
+    border-left: #072635 1px solid;
+}
+
+.set-more a {
+    transform: translateY(3px);
+}
+
+.set-more img:first-child {
+    margin-right: 10px;
+}
+
+
+
+
+/* level 2 */
+
+
+
+
+.main {
+    width: 100%;
+    /* min-height: 1050px;
+    height: 100vh; */
+    margin: 49px 0 5rem;
+    display: flex;
+    height: 1100px;
+}
+
+.bg-color {
+    background-color: #ffffff;
+}
+
+.ft-14 {
+    font-size: 14px;
+}
+
+.ft-13 {
+    font-size: 13px;
+}
+
+.b-r {
+    border-radius: 20px;
+}
+
+.m-r-33 {
+    margin-right: 33px;
+}
+
+.m-t-33 {
+    margin-top: 33px;
+}
+
+.patient-container {
+    max-width: 367px;
+    width: 28%;
+    height: 100%;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pat-title {
+    margin: 0 0 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.pat-title>h3 {
+    font-family: "Manrope", sans-serif;
+    color: #072635;
+    font-weight: 800;
+}
+
+.pat-search {
+    transform: translateY(4.675px);
+}
+
+.pat-search img.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.patient-list {
+    overflow-y: scroll;
+    height: 88%;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+
+/*scrollbar */
+.scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #E3E4E6;
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #072635;
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.scroll::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.list,
+.lab-list {
+    list-style: none;
+}
+
+.list {
+    padding: .75rem 1rem;
+    margin: .6rem 0;
+    cursor: pointer;
+}
+
+.active-pat {
+    background-color: #D8FCF7;
+}
+
+.patient {
+    width: 100%;
+}
+
+.pat-detials {
+    justify-content: flex-start;
+    align-items: unset;
+    width: 80%;
+}
+
+.pat-detials img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.pat-menu img.icon {
+    height: 15px;
+    width: 18px;
+}
+
+.pat-info {
+    margin-left: 4%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(4px);
+}
+
+.pat-info p {
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pat-info span {
+    text-transform: capitalize;
+    color: #707070;
+}
+
+.pat-data {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.data-sec1 {
+    width: 766px;
+    height: 100%;
+    width: 70%;
+}
+
+.dia-histroy,
+.dia-list,
+.lab-result {
+    padding: 1.5rem 1rem 1rem;
+}
+
+.sec-head h2 {
+    font-weight: 800;
+}
+
+.head-mg-t {
+    margin-top: 40px;
+}
+
+.sec1-head h2 {
+    font-weight: 800;
+}
+
+.chart {
+    /* max-height: 360px; */
+    max-height: 325px;
+    width: 100%;
+    background-color: #F4F0FE;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.canvasContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chartHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin: 1rem 0;
+}
+
+.chartHead>p>span {
+    margin-left: 10px;
+}
+
+.chartHead>p>span>img {
+    height: 11px !important;
+    width: 11px !important;
+}
+
+#canvasContainer>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+}
+
+#myChart {
+    width: 100%;
+}
+
+.chart-extra {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.vital-signs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signs {
+    height: 250px;
+    width: 32%;
+    border-radius: 25px;
+    padding: 16px;
+    margin-bottom: 10px;
+    color: #072635;
+}
+
+.sign-1 {
+    background-color: #E0F3FA;
+}
+
+.sign-2 {
+    background-color: #FFE6E9;
+}
+
+.sign-3 {
+    background-color: #FFE6F1;
+}
+
+.sign-img {
+    height: 96px;
+    width: 96px;
+    margin-bottom: 16px;
+}
+
+.sign-info h1 {
+    margin: 16px 0 12px;
+}
+
+.sign-info>div,
+.chart-extra>div>div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(-8px);
+}
+
+.sign-info>div>p,
+.blad>div>p {
+    font-size: 24px;
+    font-weight: 800;
+    transform: translateY(8px);
+    margin-right: 5px;
+}
+.signs.sign-2 > div.sign-info > div > p{
+    transform: translateY(-14px);
+}
+.blad > p > span {
+    display: inline-block;
+    background-color: #E66FD2;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.blad > p{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.blad > h1{
+    margin-bottom: 8px;
+}
+.systolic{
+    border-bottom: 1px solid #07263570;
+    padding: 1rem 0;
+    margin-bottom: 10px;
+}
+.systolic > div > p{
+    transform: translateY(-12px);
+}
+.diastolic > p > span{
+    background-color: #8C6FE6;
+}
+
+
+
+.dia-list {
+    height: 349px;
+}
+
+/* Diagonosis list table */
+.table {
+    width: 100%;
+}
+
+.table thead {
+    background-color: #F6F7F8;
+    border-radius: 20px;
+    display: block;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.table th:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.table th:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.table tbody {
+    height: 160px;
+    width: 100%;
+    overflow-y: auto;
+    display: block;
+    table-layout: fixed;
+}
+
+.table thead {
+    display: block;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tr {
+    padding: 8px 0;
+    display: block;
+}
+
+tr td:nth-child(2),
+tr th:nth-child(2) {
+    width: 405px;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1) {
+    width: 180px;
+}
+
+
+
+/* 3rd */
+.data-sec2 {
+    width: 367px;
+    margin-left: 33px;
+    width: 30%;
+}
+
+.patient-info {
+    padding: 30px 20px;
+}
+
+.image {
+    margin: 0 auto 24px;
+    height: 200px;
+    width: 200px;
+}
+
+.patient-info h2 {
+    margin: 0 auto;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+
+.personal-data {
+    text-align: left;
+}
+
+.personal-data ul {
+    list-style: none;
+    margin-top: 32px;
+}
+
+.personal-data li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.personal-data li img.icon {
+    height: 42px;
+    width: 42px;
+}
+
+.adin p:nth-child(2) {
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    margin: 3rem auto 1rem;
+    text-align: center;
+}
+
+.btn a {
+    padding: 10px 20px;
+    background-color: #01F0D0;
+    font-weight: 700;
+    color: #072635;
+}
+
+.btn a:hover {
+    background-color: #072635;
+    color: #01F0D0;
+}
+
+.lab-result {
+    height: 320px;
+}
+
+.lab-list {
+    margin-top: 30px;
+    padding: 0 0 20px 10px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.li-test {
+    padding: 10px;
+}
+
+.li-test:nth-child(2) {
+    background-color: #F6F7F8;
+}
+
+.show-patList {
+    display: none;
+}

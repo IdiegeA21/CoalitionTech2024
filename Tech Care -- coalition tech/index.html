@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech . Care</title>
+
+
+    <!-- Css style sheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="brand">
+                <img src="./assets/images/TestLogo.svg" alt="Brand Logo">
+            </a>
+
+            <div class="menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/home.svg" alt="Home icon" class="icon">
+                            <p class="ft-14">Overview</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link ">
+                            <img src="./assets/icons/group.svg" alt="Patients icon" class="icon">
+                            <p class="ft-14">Patients</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/calendar.svg" alt="schedule icon" class="icon">
+                            <p class="ft-14">Schedule</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/chat.svg" alt="Message icon" class="icon">
+                            <p class="ft-14">Message</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="./assets/icons/credit_card.svg" alt="Transaction icon" class="icon">
+                            <p class="ft-14">Transaction</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="menu-icon1" class="menu-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="doctor-menu">
+                    <div class="doctor-info ft-14">
+                        <img src="./assets/images/senior doctor.png" alt="General Practioner image">
+                        <div>
+                            <p class="doc-name">
+                                Dr. Jose Simmons
+                            </p>
+                            <p class="doc-position">
+                                General Practioner
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="set-more">
+                        <a href="#">
+                            <img src="./assets/icons/settings.svg" alt="Settings" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/more_vert.svg" alt="more" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="main">
+            <div class="show-patList">
+                <div id="menu-icon2" class="menu-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <a href="#" class="">Patient List</a>
+            </div>
+            <div class="bg-color b-r m-r-33 patient-container">
+                <div class="d-flex pat-title">
+                    <div class="sec-head">
+                        <h2>
+                            Patients
+                        </h2>
+                    </div>
+                    <span class="pat-search">
+                        <img src="./assets/icons/search.svg" alt="Search Icon" class="icon">
+                    </span>
+                </div>
+                <ul class="patient-list scroll" id="patient-List">
+
+
+                    <li id="defaultList">
+                        <div class="d-flex patient">
+                            <div class="d-flex d-flex pat-detials">
+                                <img src="./assets/images/patient-1.jpg" alt="Patient One Image">
+                                <div class="pat-info ft-14">
+                                    <p>Emily Williams</p>
+                                    <span>female, 18</span>
+                                </div>
+                            </div>
+                            <span class="pat-menu">
+                                <img src="./assets/icons/hori-menu.svg" alt="horizontal menu image" class="icon">
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="pat-data">
+                <!-- Diagnosis histtroy and list -->
+                <section class="data-sec1">
+                    <div id="diagnosis-history" class="bg-color b-r dia-histroy">
+                        <div class="sec-head">
+                            <h2>Diagnosis Histroy</h2>
+                        </div>
+                        <div class="chart head-mg-t">
+                            <div class="canvasContainer" id="canvasContainer">
+                                <div class="chartHead ft-13">
+                                    <h3>Blood Pressure</h3>
+                                    <p>
+                                        Last 6 months
+                                        <span>
+                                            <img src="./assets/icons/expand_more.svg" alt="expand_moreicon.svg"
+                                                class="icon" style="color: #ff0000">
+                                        </span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="chart-extra">
+                                <div class="systolic blad">
+                                    <p class="ft-14">
+                                        <span>
+                                        </span>
+                                        Systolic
+                                    </p>
+                                    <h1>160</h1>
+                                    <div>
+                                        <p>
+                                            &#129169;
+                                        </p>
+                                        <span class="ft-13">
+                                            Higher than Average
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="diastolic blad">
+                                    <p class="ft-14">
+                                        <span>
+                                        </span>
+                                        Diastolic
+                                    </p>
+                                    <h1>78</h1>
+                                    <div>
+                                        <p>
+                                            &#129171;
+                                        </p>
+                                        <span class="ft-13">
+                                            Lower than Average
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vital-signs">
+                        </div>
+                    </div>
+
+                    <div id="diagnosis-list" class="bg-color b-r dia-list m-t-33 scroll">
+
+                        <div class="sec-head">
+                            <h2>Diagnosis List</h2>
+                        </div>
+
+                        <table class="table head-mg-t">
+                            <thead>
+                                <tr>
+                                    <th>Problem/Diagnosis</th>
+                                    <th>Description</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="scroll">
+                                <tr>
+                                    <td>Hypertension</td>
+                                    <td>Chronic high blood pressure</td>
+                                    <td>Under Observation</td>
+                                </tr>
+                                <tr>
+                                    <td>Type 2 Diabetes</td>
+                                    <td>Insulin resistance and elevated blood sugar</td>
+                                    <td>Cured</td>
+                                </tr>
+                                <tr>
+                                    <td>Asthma</td>
+                                    <td>Recurrent episodes of bronchial constriction</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr>
+                                    <td>Osteoarthritis</td>
+                                    <td>Degenerative joint disease</td>
+                                    <td>Untreated</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+                <section class="data-sec2">
+                    <div class="patient-info b-r bg-color" id="patient-info">
+                        <div>
+                            <div class="image">
+                                <img src="./assets/images/Layer 2@2x.png" alt="Patient-image.png">
+                            </div>
+                            <h2>Jassica Taylor</h2>
+                            <div class="personal-data">
+                                <ul>
+                                    <li>
+                                        <img src="./assets/icons/BirthIcon.svg" alt="BirthIcon.svg"
+                                            class="icon p-d-icon">
+                                        <div class="ft-14 adin">
+                                            <p>Date Of Birth</p>
+                                            <p>August 23, 1996</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/FemaleIcon.svg" alt="FemaleIcon.svg"
+                                            class="icon p-d-icon">
+                                        <div class="ft-14 adin">
+                                            <p>Gender</p>
+                                            <p>Female</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/PhoneIcon.svg" alt="PhoneIcon.svg"
+                                            class="icon p-d-icon">
+                                        <div class="ft-14 adin">
+                                            <p>Contact Info.</p>
+                                            <p>(415) 555-1234</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/PhoneIcon.svg" alt="PhoneIcon.svg"
+                                            class="icon p-d-icon">
+                                        <div class="ft-14 adin">
+                                            <p>Emergency Contacts</p>
+                                            <p>(415) 555-5678</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/icons/InsuranceIcon.svg" alt="InsuranceIcon.svg"
+                                            class="icon p-d-icon">
+                                        <div class="ft-14 adin">
+                                            <p>Insurance Provider</p>
+                                            <p>Sunrise Health Assurance</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn">
+                                    <a href="#" role="button" class="ft-14 b-r">Show All Information</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lab-result b-r bg-color m-t-33">
+
+                        <div class="sec-head">
+                            <h2>Lab Result</h2>
+                        </div>
+
+                        <ul class="lab-list scroll">
+                            <li class="li-test">
+                                <div class="d-flex ft-13">
+                                    <p>Blood Tests</p>
+                                    <span>
+                                        <img src="./assets/./icons/download.svg" alt="downloadIcon.png">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="li-test">
+                                <div class="d-flex ft-14">
+                                    <p>
+                                        CT Scans
+                                    </p>
+                                    <span>
+                                        <img src="./assets/./icons/download.svg" alt="downloadIcon.png">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="li-test">
+                                <div class="d-flex ft-14">
+                                    <p>
+                                        Radiology Reports
+                                    </p>
+                                    <span>
+                                        <img src="./assets/./icons/download.svg" alt="downloadIcon.png">
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="li-test">
+                                <div class="d-flex ft-14">
+                                    <p>
+                                        X-Rays
+                                    </p>
+                                    <span>
+                                        <img src="./assets/./icons/download.svg" alt="downloadIcon.png">
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="shadow">
+
+    </div>
+    <script src="./script.js"></script>
+    <script src="./api.js"></script>
+</body>
+
+</html>

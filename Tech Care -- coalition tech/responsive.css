@@ -1,0 +1,591 @@
+/* this is for big screens */
+@media (max-width: 1540px) {
+    .menu {
+        width: 75%;
+    }
+
+    .menu>ul {
+        transform: translateY(3.45px);
+    }
+
+    .nav-link {
+        font-size: 8px;
+        padding: 8px 14px;
+    }
+
+    .nav-link>p {
+        transform: translateY(0);
+    }
+
+    img.icon:not(.set-more .icon):not(.pat-search .icon):not(.p-d-icon) {
+        width: 20px;
+        height: 15.43px;
+        margin-right: 3px;
+        transform: translateY(2px);
+    }
+
+    .navbar {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width:1320px) {
+    .main {
+        margin-top: 39px;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    .data-sec2 {
+        margin-left: 22px;
+    }
+
+    .m-t-33 {
+        margin-top: 22px;
+    }
+
+    .m-r-33 {
+        margin-right: 22px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .menu {
+        width: 78%;
+    }
+
+    .doctor-info>img {
+        height: 40px;
+        width: 40px;
+    }
+
+    li.nav-item {
+        margin: 0;
+    }
+}
+
+
+/* for small screens -- Level 1, */
+/* At this point, the menu navbar section will collapse */
+@media (max-width: 1200px) {
+
+    .navbar {
+        position: relative;
+        z-index: 5;
+    }
+
+    .menu {
+        width: auto;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 14px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .menu-icon .bar {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #072635;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-icon .bar:nth-child(1) {
+        top: 0;
+    }
+
+    .menu-icon .bar:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu-icon .bar:nth-child(3) {
+        bottom: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+
+    /* Style the navigation list as a horizontal list */
+    .menu>ul {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 2%;
+        width: 300px;
+        height: 500px;
+        background-color: #fff;
+        border-right: 1px solid #ddd;
+        transition: all 0.5s;
+        border-radius: 25px;
+    }
+
+    .menu>ul>li.nav-item {
+        padding: 4px 18px 10px;
+        margin: 15px auto;
+    }
+
+    .menu>ul>li.nav-item:first-child {
+        margin-top: 30px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .nav-link>img.icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .nav-link>p {
+        transform: translate(-1.897px, 5.89px);
+    }
+
+    .vertical-nav {
+        display: flex !important;
+        flex-direction: column;
+        z-index: 5;
+        box-shadow: 10px 11px 23px 2px rgba(0, 0, 0, 0.75);
+    }
+
+    .nav-link>img.icon {
+        width: 24px !important;
+        height: 24px !important;
+        margin-right: 12px !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .patList-active {
+        overflow: hidden;
+    }
+
+    .patient-container {
+        position: absolute;
+        left: -1000px;
+        width: 50%;
+        box-shadow: 10px 11px 23px 2px rgba(0, 0, 0, 0.603);
+        margin-right: 0 !important;
+    }
+
+    .patient-container.tog {
+        left: 16px;
+        z-index: 5;
+        height: 90vh;
+    }
+
+    .patient-list {
+        height: 80vh;
+    }
+
+    .show-patList {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+        padding: 0 20px;
+        border-radius: 20px 20px 0 0;
+        height: 60px;
+        z-index: 5;
+    }
+
+    .show-patList a {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #072635;
+    }
+
+    .shadow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 2;
+    }
+
+    .show-shadow {
+        display: block;
+    }
+
+    .zIndex {
+        z-index: 1
+    }
+}
+
+@media (max-width: 840px) {
+    .main {
+        height: auto;
+    }
+
+    .patient-container.tog {
+        height: 88vh;
+    }
+
+    .patient-list {
+        height: 85%;
+    }
+
+    .pat-data {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .data-sec2 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .patient-info {
+        width: 48.8vw;
+    }
+
+    .lab-result {
+        width: 40vw;
+        margin-top: 0 !important;
+        height: 100%;
+    }
+
+    .data-sec1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* . */
+
+
+
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    .patient-container.tog {
+        left: 11px;
+    }
+
+    .brand {
+        height: 38px;
+        width: 170px;
+    }
+
+    .menu-icon {
+        width: 17px;
+        height: 15px;
+        margin-right: 8px;
+    }
+
+    .menu>ul {
+        height: 650px;
+    }
+
+    .set-more {
+        opacity: 0;
+        position: absolute;
+        top: 600px;
+        right: 125px;
+        border-left: none;
+        border-top: 1px solid #072635;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+        z-index: -1;
+    }
+
+    .show-set-more {
+        opacity: 1;
+        z-index: 5;
+        margin-top: 10px;
+    }
+
+    .patient-info {
+        width: 50vw;
+    }
+
+    .lab-result {
+        width: 41vw;
+    }
+}
+
+@media (max-width: 570px) {
+    .vital-signs {
+        flex-wrap: wrap;
+    }
+
+    .signs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .show-patList {
+        top: 85px;
+    }
+
+    .patient-info {
+        width: 48.5vw;
+    }
+
+    .patient-container {
+        width: 100%;
+    }
+
+    .lab-result {
+        width: 39vw;
+    }
+
+    .brand {
+        width: 174px;
+    }
+
+    .navbar {
+        padding-left: 5px;
+    }
+
+    .menu>ul {
+        top: 80px;
+        height: 90vh;
+        width: 95.823%;
+    }
+
+    .set-more {
+        top: 650px;
+        right: 44%;
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .data-sec2 {
+        flex-wrap: wrap;
+    }
+
+    .show-patList {
+        top: 80px;
+    }
+
+    .patient-info,
+    .lab-result {
+        width: 100%;
+    }
+
+    .lab-result {
+        margin-top: 33px !important;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .menu>ul>li.nav-item:first-child {
+        margin-top: 5rem;
+    }
+
+    .menu>ul>li.nav-item {
+        margin-top: 2rem;
+    }
+
+    .doctor-menu {
+        position: absolute;
+        top: 90vh;
+        left: 20%;
+        z-index: 5;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .show-doc-menu {
+        opacity: 1;
+        z-index: 5;
+    }
+
+    .set-more {
+        padding-left: 10px;
+        border-left: #072635 1px solid;
+        top: 0;
+        right: 0;
+        border-top: none;
+        position: relative;
+    }
+
+    #menu-icon1 {
+        margin-right: 1.5rem;
+    }
+
+    .dia-list {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+
+
+/* For very small screens */
+@media (max-width: 370px) {
+    .patient-container {
+        width: 94%;
+    }
+
+    .doctor-menu {
+        left: 12%;
+    }
+
+    .doctor-info>div {
+        transform: translateY(0px);
+    }
+
+    .doctor-info>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .doc-name {
+        font-size: 12px;
+    }
+
+    .doc-position {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+    .brand {
+        height: 29px;
+        width: 140px;
+    }
+
+    .doctor-info>img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+@media (min-width:1380px) {
+    .chart {
+        min-height: 333px;
+    }
+}
+
+@media (max-width:1102px) {
+
+    .chart {
+        min-height: 335px;
+    }
+}
+
+@media (min-width:1402px) {
+    .chart {
+        min-height: 340px;
+    }
+
+    .main {
+        min-height: 1170px;
+        margin-bottom: 7rem;
+    }
+    .patient-container{
+        height: 96%;
+    }
+}
+
+@media (min-width:1520px) {
+    .chart {
+        min-height: 370px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .chart {
+        max-height: fit-content;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .patient-info {
+        height: 64%;
+    }
+    .lab-result{
+        height: 30%;
+    }
+}
+
+@media (max-width:840px) {
+    .chart {
+        max-height: fit-content;
+    }
+
+    .chartHead {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:600px) {
+    .chart {
+        flex-direction: column;
+        padding: 12px 8px;
+    }
+
+    .chartHead {
+        margin-bottom: 2rem;
+    }
+    .chart-extra{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 0;
+    }
+    .blad{
+        width: 40%;
+    }
+    .systolic{
+        border-bottom: none;
+        padding: 0;
+    }
+}
